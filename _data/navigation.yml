@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
   - title: "Posts"
     url: /posts/
-  - title: "Source Code"
-    url: https://github.com/limyunkai19/minimal-mistakes-jekyll
+  - title: "Contact Us"
+    url: /contact/
+  # - title: "Source Code"
+  #   url: https://github.com/limyunkai19/minimal-mistakes-jekyll
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
