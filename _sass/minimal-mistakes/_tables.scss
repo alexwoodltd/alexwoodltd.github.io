@@ -42,3 +42,77 @@ table tr {
 table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
+
+.styled-table {
+  border-collapse: separate;
+  margin: 25px 0;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+  border-radius: 2rem;
+  border-spacing: 0;
+
+  /* Change these properties */
+  --border: 0px solid black;
+  border-radius: 1rem;
+ 
+  /* Don't change these properties */
+  border-spacing: 0;
+  border-collapse: separate;
+  border: var(--border);
+  overflow: hidden;
+}
+
+.styled-table thead tr {
+  background-color: #133d8f;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: .6rem .6rem;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 1px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.styled-table {
+  
+ }
+ 
+ /* Apply a border to the right of all but the last column */
+ .styled-table th:not(:last-child),
+ .styled-table td:not(:last-child) {
+  border-right: var(--border);
+ }
+ 
+ /* Apply a border to the bottom of all but the last row */
+ .styled-table>thead>tr:not(:last-child)>th,
+ .styled-table>thead>tr:not(:last-child)>td,
+ .styled-table>tbody>tr:not(:last-child)>th,
+ .styled-table>tbody>tr:not(:last-child)>td,
+ .styled-table>tfoot>tr:not(:last-child)>th,
+ .styled-table>tfoot>tr:not(:last-child)>td,
+ .styled-table>tr:not(:last-child)>td,
+ .styled-table>tr:not(:last-child)>th,
+ .styled-table>thead:not(:last-child),
+ .styled-table>tbody:not(:last-child),
+ .styled-table>tfoot:not(:last-child) {
+  border-bottom: var(--border);
+ }
