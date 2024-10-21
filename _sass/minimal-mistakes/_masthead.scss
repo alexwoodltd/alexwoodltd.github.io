@@ -48,6 +48,14 @@
   z-index: 20;
 }
 
+.site-logo {
+  img {
+  height: auto;
+  width: 20rem;
+  margin-left: -1rem;
+  }
+}
+
 .masthead__menu {
   float: left;
   margin-left: 0;
