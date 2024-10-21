@@ -3,7 +3,7 @@ title: "Contact Us"
 permalink: /contact/
 ---
 
-<form action="{FORM_ENDPOINT}" method="POST">
+<form class="form" action="{FORM_ENDPOINT}" method="POST">
   <div class="mb-3 pt-0">
     <input type="text" placeholder="Your name" name="name" required />
   </div>
@@ -14,6 +14,6 @@ permalink: /contact/
     <textarea placeholder="Your message" name="message" required></textarea>
   </div>
   <div class="mb-3 pt-0">
-    <button type="submit">Send a message</button>
+    <button type="submit">Send</button>
   </div>
 </form>
