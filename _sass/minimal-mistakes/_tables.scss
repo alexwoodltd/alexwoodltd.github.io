@@ -46,7 +46,7 @@ table tr:nth-child(2n) {
 .styled-table {
   border-collapse: separate;
   margin: 25px 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-family: sans-serif;
   min-width: 400px;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
@@ -68,11 +68,13 @@ table tr:nth-child(2n) {
   background-color: #133d8f;
   color: #ffffff;
   text-align: left;
+  letter-spacing: .03rem;
 }
 
 .styled-table th,
 .styled-table td {
     padding: .6rem .6rem;
+    white-space: nowrap;
 }
 
 .styled-table tbody tr {
@@ -91,28 +93,24 @@ table tr:nth-child(2n) {
   font-weight: bold;
   color: #009879;
 }
-
-.styled-table {
-  
- }
  
- /* Apply a border to the right of all but the last column */
- .styled-table th:not(:last-child),
- .styled-table td:not(:last-child) {
+/* Apply a border to the right of all but the last column */
+.styled-table th:not(:last-child),
+.styled-table td:not(:last-child) {
   border-right: var(--border);
- }
+}
  
- /* Apply a border to the bottom of all but the last row */
- .styled-table>thead>tr:not(:last-child)>th,
- .styled-table>thead>tr:not(:last-child)>td,
- .styled-table>tbody>tr:not(:last-child)>th,
- .styled-table>tbody>tr:not(:last-child)>td,
- .styled-table>tfoot>tr:not(:last-child)>th,
- .styled-table>tfoot>tr:not(:last-child)>td,
- .styled-table>tr:not(:last-child)>td,
- .styled-table>tr:not(:last-child)>th,
- .styled-table>thead:not(:last-child),
- .styled-table>tbody:not(:last-child),
- .styled-table>tfoot:not(:last-child) {
+/* Apply a border to the bottom of all but the last row */
+.styled-table>thead>tr:not(:last-child)>th,
+.styled-table>thead>tr:not(:last-child)>td,
+.styled-table>tbody>tr:not(:last-child)>th,
+.styled-table>tbody>tr:not(:last-child)>td,
+.styled-table>tfoot>tr:not(:last-child)>th,
+.styled-table>tfoot>tr:not(:last-child)>td,
+.styled-table>tr:not(:last-child)>td,
+.styled-table>tr:not(:last-child)>th,
+.styled-table>thead:not(:last-child),
+.styled-table>tbody:not(:last-child),
+.styled-table>tfoot:not(:last-child) {
   border-bottom: var(--border);
- }
+}
